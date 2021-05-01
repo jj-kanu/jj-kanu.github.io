@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>JJ Kanu | About Me</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+ <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">JJ Kanu</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#toggleMobileMenu" 
+                aria-controls="toggleMobileMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="project_pages/multicard.html">MultiCard.js</a></li>
+                            <li><a class="dropdown-item" href="project_pages/palyglot.html">palyglot</a></li>
+                            <li><a class="dropdown-item" href="project_pages/clubcus.html">Clubcus</a></li>
+                            <li><a class="dropdown-item" href="project_pages/spend2save.html">Spend2Save</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="James F. Kanu.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="profileContent">
+        <!-- About Me -->
+        <div class="row about-header">
+            <div class="col-lg-6">
+                <img src="SmileyCrop.png" id="about-pic"/>
+            </div>
+            <div class="col-lg-6">
+                <div class="header">A Little Bit About Me</div>
+                <div id="about-header-text">
+                    I am a graduating student with a passion for problem solving and technology. I
+                    plan to pursue a career where I can utilize the skills I learned through academia.
+                    <br>
+                    <br>
+                    Kitchen Specialty: Nachos
+                </div>
+            </div>
+        </div>
+        <!-- <img src="varsity.jpg"/> -->
+        <!-- Education -->
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="header">About Me</div>
+                <hr>
+                <div class="paraText">
+                    I will be receiving an Honours Bachelor of Science from the University of Toronto. 
+                    I focused my education on learning data structures and algorithms, as well as software development,
+                    majoring in Mathematics with minors in Computer Science and Statistics.
+                    <br>
+                    During my time at school, I was a varsity athlete on the Track and Field team, even
+                    becoming a Captain of the Men's Sprints in my final year.
+                    <!-- Graphic on right, one of graduation, one of running, changing every 10s? -->
+                    Communication is Key! Having worked in a retail environment part-time for years while in school, I believe that one of my most 
+                    utilized strengths is communication. The ability to work in a team requires a level 
+                    of experience I have been exposed to for years given my role as an athlete on the 
+                    University of Toronto Track Team. Assessing a problem, utilizing a people’s 
+                    strengths, and putting a plan into action are invaluable tools I gained from being 
+                    part of a team.
+                    
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="header">Skills</div>
+                <hr>
+                <div id="skills-box">
+                    <span class="skills-tag skills-fe">HTML/CSS</span>
+                    <span class="skills-tag skills-fe">JavaScript</span>
+                    <span class="skills-tag skills-fe">React</span>
+                    <span class="skills-tag skills-be">Python</span>
+                    <span class="skills-tag skills-be">Java</span>
+                    <span class="skills-tag skills-be">R</span>
+                    <span class="skills-tag skills-prog">Git</span>
+                    <span class="skills-tag skills-soft">Communication</span>
+                    <span class="skills-tag skills-soft">JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="row about-bottom">
+            <div class="col-lg-4">
+                <div class="header">Accomplishments</div>
+                <hr>
+            </div>
+            <div class="col-lg-4">
+                <div class="header">Personal Accomplishments</div>
+                <hr>
+                <img src="varsity.jpg"/>
+            </div>
+            <div class="col-lg-4">
+                <div class="header">Fun Facts</div>
+                <hr>
+            </div>
+        </div>
+    
+    
+    
+    </div>
+
+    <footer class="page-footer">
+        Made by yours truly. 2021
+    </footer>
+
+
+ </body>
+
+</html>
