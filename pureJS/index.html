@@ -13,93 +13,122 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
  </head>
- <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">JJ Kanu</a>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#toggleMobileMenu" 
-                aria-controls="toggleMobileMenu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-end">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="about.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="James F. Kanu.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li class="nav-item nav_logo">
-                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
-                    </li>
-                    <li class="nav-item nav_logo">
-                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+ <body id="index">
 
      <!-- Top Picture -->
      <!-- Main text will appear on page load, "I also go by JJ" will appear along bench top in image. --> 
     <div id="splashPic">
-        <!-- This menu will stay affixed in the top right, with icons for links. Will go from white to black once past image. -->
-        <div id="contact_info" >
-            <a href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
-        </div>
-        <div id="splashPicText">
-            <h1>
-                Hi, I'm James F. Kanu
-                <br>
-                <small>(I also go by JJ)</small>
-            </h1>
+
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="splashBar">
+            <div class="container">
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#toggleMobileMenu" 
+                    aria-controls="toggleMobileMenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-5 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="James F. Kanu.pdf" target="_blank">Resume</a>
+                        </li>
+                        <li class="nav-item nav_logo">
+                            <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item nav_logo">
+                            <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" id="splashPicText">
+                <span class="greeting">Hi, I'm </span><br>
+                <span class="name">James F. Kanu</span><br><br>
+                <span class="nickname">I also go by JJ. I like developing..</span><br>
+                <span class="subtitle">Welcome to my portfolio.</span><br>
         </div>
         <!-- This menu will start at bottom of splash image and affix to top when scrolling down (Also turns from white to black). -->
-        <div id="affix_menu" >
+        <!-- <div id="affix_menu" >
             <button>About Me</button>
             <button>Education</button>
             <button>Work Experience</button>
             <button>Projects</button>
-        </div>
+        </div> -->
+        <!-- <div id="splashTextContainer" class="container">
+            <div class="row">
+                <div class="col-lg-4">About Me</div>
+                <div class="col-lg-4">Check Out Some of My Projects</div>
+                <div class="col-lg-4">Resume</div>
+            </div>
+        </div> -->
     </div>
 
-    <div class="container">
+    <div class="container" id="projects">
         <h1>Some Stuff I've Done</h1>
-        <div class="row projects-row">
-            <div class="col-lg-6 project_card">
-                <a href="project_pages/multicard.html">
-                    <img id="multicard" src="cards/multicard_thumb.PNG" style="width: 100%;">
-                </a>
+        <div class="row projects_row">
+            <div class="col-lg-6">
+                <div class="project_card">
+                    <a href="project_pages/multicard.html">
+                        <img src="cards/multicard_thumb.PNG" class="project_card_img" alt="palyglot_card">
+                        <div class="card_overlay">
+                            <div class="card_overlay_text">
+                                <span class="title">MultiCard.js</span><br>My Very Own JS Library
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-lg-6">
-                <a href="project_pages/palyglot.html">
-                    <img src="cards/palyglot_thumb.PNG" style="width: 100%;">
-                </a>
+                <div class="project_card">
+                    <a href="project_pages/palyglot.html">
+                        <img src="cards/palyglot_thumb.PNG" class="project_card_img" alt="palyglot_card">
+                        <div class="card_overlay">
+                            <div class="card_overlay_text">
+                                <span class="title">palyglot</span><br>Language Development Web
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row projects-row">
+        <div class="row projects_row">
             <div class="col-lg-6">
-                <a href="project_pages/clubcus.html">
-                    <img src="cards/clubcus_thumb.PNG" style="width: 100%;">
-                </a>
+                <div class="project_card">
+                    <a href="project_pages/clubcus.html">
+                        <img src="cards/clubcus_thumb.PNG" class="project_card_img" alt="palyglot_card">
+                        <div class="card_overlay clubcus">
+                            <div class="card_overlay_text">
+                                <span class="title">Clubcus</span><br>Something Here
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-lg-6">
-                <a href="project_pages/spend2save.html">
-                    <img src="cards/spend2save_thumb.PNG" style="width: 100%;">
-                </a>
+                <div class="project_card">
+                    <a href="project_pages/spend2save.html">
+                        <img src="cards/spend2save_thumb.PNG" class="project_card_img" alt="palyglot_card">
+                        <div class="card_overlay">
+                            <div class="card_overlay_text">
+                                <span class="title">Spend2Save</span><br>Something Here
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer footer py-4">
         Made by yours truly. 2021
     </footer>
 
