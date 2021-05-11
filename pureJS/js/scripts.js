@@ -18,3 +18,10 @@ $('.dropdown').on('show.bs.dropdown', function(e){
 $('.dropdown').on('hide.bs.dropdown', function(e){
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
 });
+
+
+function goToByScroll(id){
+    $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+}
+
+

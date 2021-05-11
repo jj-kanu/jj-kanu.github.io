@@ -57,14 +57,171 @@
     </div>
 </nav>
 
-    <div class="container" id="profileContent">
+    <div class="container project_page">
         <!-- About Me -->
-        <div class="header">Palyglot</div>
-        <div class="paraText">
-            I will be receiving an Honours Bachelor of Science from the University of Toronto. 
-            I focused my education on learning data structures and algorithms, as well as software development,
+        <h1>Palyglot</h1>
+        <div class="header">
+            Learning a new language, now with Friends!
+        </div>
+        <a href="https://frontendcsc301-298402.uc.r.appspot.com" target="_blank">
+            <div class="row banner_row">
+                <img class="page_banner" src="../images/palyglot/palyglot_page_pic.png">
+            </div>
+        </a>
+        <div class="row project_details">
+            <div class="col-md-3 text-center">
+                <strong>Timeline:</strong><br> 
+                October 2020 - December 2020
+            </div>
+            <div class="col-md-6 text-center">
+                <strong>Team:</strong><br> 
+                Dominic Casillano, Faraz Hussein, JJ Kanu (Me!), Owen Hu 
+            </div>
+            <div class="col-md-3 text-center">
+                <strong>Tools:</strong><br> 
+                MongoDB, Express, React, Node.js
+            </div>
+        </div>
+        <div class="row">
+            <h3>Overview</h3>
+            <div class="paratext">
+                A portmanteau of PenPal and polyglot (a person who speaks multiple languages), Palyglot is the result of a semester-long project in the University of Toronto’s Software Engineering course, CSC301. It is a web app made with the intent to to create an environment for friends who regularly write to each other to improve their literacy in a foreign language.
+            </div>
+        </div>
+        <div class="row">
+            <h3>My Role</h3>
+            <div class="paratext">
+                My role pertained to much of the front-end design and implementation. This included the initial mock-up designed using Figma all the way to the front-end of the deployed site.
+            </div>
+        </div>
+        <div class="row">
+            <h3>Why Palyglot?</h3>
+            <div class="col-lg-8">
+                <div class="paratext">
+                    Imagine a scenario: wanting to learn something during the monotony of quarantine, you decide it would be a good idea to learn a new language. Now you look towards apps like Duolingo or more traditional methods like Rosetta Stone, both of which you can learn a lot from, but they both lack the best way to learn a new language: that is just to talk to other people. 
+                    <br> <br>
+                    A lot of the current Pen Pal systems that have this idea in mind are very outdated; either there is no incentive to keep using them, have antiquated user interfaces (pictured right), or use actual physical mail. We wanted to make an application where we can modernize these older systems in the vain of current applications: where it is easy, fast, and rewarding to keep learning alongside talking to new individuals.
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="../images/palyglot/outdated.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Planning and Design</h3>
+            <div class="col-lg-4">
+                <h4>Who are our target users?</h4>
+                <div class="paratext">
+                    A businesswoman in her 30’s who moved to a new country and wants to meet new friends to improve her communication skills in her new language
+                    <br>
+                    University students wanting to learn a new language with others (The actual inspiration for this project!)
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h4>What kind of User Stories would they have?</h4>
+                <div class="paratext">
+                    As a student learning French, I want to meet other French speakers or learners in order to hone my French skills and increase my vocabulary.
+                    <ul>
+                        <li>Choose French as a language when matching with other users</li>
+                        <li>Display the languages you speak so other users can match with you</li>
+                    </ul>
+                    As someone who wants a pen pal, I want to be able to speak with others who have similar interests so that we can have fun and engaging conversations about things we both like.
+                    <ul>
+                        <li>Ability to add interests to your profile</li>
+                        <li>Have a matching algorithm that finds users with similar interests</li>
+                        <li>Users should have a profile where they can introduce their interests and hobbies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Modeling Our Application</h4>
+                <div class="paratext">
+                    In our initial design, the frontend would render our homepage, with authentication, then lead the user to a matchmaking component, messaging component and a profile component. <br>
+                    The matchmaking component will communicate with the backend to retrieve new matches and to allow the user to select matches. 
+                    The messaging component will communicate with the backend to retrieve matches and messages, and it will also communicate with our APIs such as the Google Translate API to run our extra features (spell checking, dictionary etc.). 
+                    Lastly, the profile will also communicate with the backend to show the user their profile and allow them to edit it. For all backend requests, the backend will be retrieving data from our main server.
+                </div>
+            <img id='uml' src="../images/palyglot/uml.png"/>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">            
+                <div class="ratio ratio-16x9">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnCONeiJk8IhWaw5rTMG6Zy%2FPenPals-Draft%3Fnode-id%3D3%253A0%26scaling%3Dmin-zoom%26page-id%3D0%253A1" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Implementation</h3>
+            <div class="paratext">
+                We used Node.js to build our application, using React.js in the frontend and Express.js in the backend. Although we initially considered using Python, we saw that the APIs we wanted to use had better support on Node.js (such as Google Translate API). 
+            </div>
+            <img id='node' src="../images/palyglot/node.png"/>
+            <div class="paratext">
+                Also, React.js (Frontend) and Express.js (Backend) are very easy to use frameworks for web apps that are built upon Node.js. Using Node.js allowed our Frontend and Backend to be built in the same language and gave us better ease of development.
+            </div>
+        </div>
+        <div class="row">
+            <h3>Deployment</h3>
+            <div class="paratext">
+                By the end of the semester, we were able to complete the project on top of balancing our other academic responsibilities. Although missing some of the initial features we had mapped out we were able to achieve several of our set out key features:
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul>
+                    <li>Login and Signup</li>
+                        <ul>
+                            <li>Users can create accounts, specify their details and languages they know or languages they are targetting, this affects the matchmaking service.</li>
+                        </ul>
+                    <li>Profile Page</li>
+                        <ul>
+                            <li>Users can edit their bio and interests to customize their profiles</li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li>Matchmaking</li>
+                        <ul>
+                            <li>Users can view the profiles of potential matches (other users)</li>
+                            <li>Users can send match requests to users</li>
+                        </ul>
+                    <li>Chat</li>
+                        <ul>
+                            <li>Users can text chat with other users</li>
+                            <li>Users can have multiple chats with different users</li>
+                            <li>Chats are kept updated and users can view previous messages</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                Take a look at our demo!
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://drive.google.com/file/d/1OJ6UAwW2ciZy3FN7ZUmYjXbhUynUdH5q/preview" width="640" height="480"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paratext">
+                Want to see the site for yourself? Check out the deployed link <a href="https://frontendcsc301-298402.uc.r.appspot.com" target="_blank">here</a>!
+            </div>
+        </div>
+        <div class="row">
+            <h3>What I Learned</h3>
+            <div class="paratext">
+                Although I have had a couple of large group projects at this point, non have been to this scale. Initially we started off with 6 members so our model and mockup was within the realm of possibility. After a couple of students left the group, our initial plan became less feasible. We had to learn to compromise on our original vision and focus on key features. I learned the importance of flexibility and adaptability when working on large applications. Our weekly sprints became essential when we had to buckle down to finish the project, and is a skill I know I can carry on in the future. 
+            </div>
         </div>
     </div>
+
+    <footer class="page-footer">
+        "Malheureusement, mon français est encore mauvais."
+        <br>
+        <span class="authored">© JJ Kanu 2021</span>
+    </footer>
  </body>
 
 </html>

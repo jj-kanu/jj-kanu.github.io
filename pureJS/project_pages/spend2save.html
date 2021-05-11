@@ -57,14 +57,160 @@
         </div>
     </nav>
 
-    <div class="container" id="profileContent">
-        <!-- About Me -->
-        <div class="header">Spend2Save</div>
-        <div class="paraText">
-            I will be receiving an Honours Bachelor of Science from the University of Toronto. 
-            I focused my education on learning data structures and algorithms, as well as software development,
+    <div class="container project_page">
+        <h1>Spend2Save</h1>
+        <div class="header">
+            For UofT Students, by Uoft Students.
+        </div>
+        <a href="https://devpost.com/software/spend-to-save" target="_blank">
+            <div class="row banner_row">
+                <img class="page_banner" src="../images/spend2save/spend2save_page_pic.PNG"/>
+            </div>
+        </a>
+        <div class="row project_details">
+            <div class="col-md-3 text-center">
+                <strong>Timeline:</strong><br> 
+                February 18-21 2021 (36 Hours)
+            </div>
+            <div class="col-md-6 text-center">
+                <strong>Team:</strong><br> 
+                Bianca Pokhrel, Isaac Casey, JJ Kanu (Me!), Warren Chu
+            </div>
+            <div class="col-md-3 text-center">
+                <strong>Tools:</strong><br> 
+                Flutter, Andriod SDK, UXPin
+            </div>
+        </div>
+        <div class="row">
+            <h3>Overview</h3>
+            <div class="paratext">
+                Spend2Save is an interactive prototype of a mobile app that gamifies the money saving experience. It was created as part of UofTHacks VIII, where it won the RBC challenge:  'In the economy of freelance work, what solution can help students strategically save towards an emergency fund without feeling overwhelmed?'
+            </div>
+        </div>
+        <div class="row">
+            <h3>My Role</h3>
+            <div class="paratext">
+                Given that we were all learning a new framework together, I took part in a bit of everything over the course of the project. Specifically, the sign-in/log-in screens and the store pages were the parts of the project I was most responsible for.
+            </div>
+        </div>
+        <div class="row">
+            <h3>Why Spend2Save?</h3>
+            <div class="col-lg-6">
+                <div class="paratext">
+                    At the time of the hackathon, Toronto was once again going into lockdown. When we thought about this as a team, we realized that the feeling of putting a set amount of money away every time income rolls through, may create feelings of dread rather than positivity. <br> <br>
+                    We wanted to create a positive association towards investing in an emergency fund by pairing it with a huge market of users who purchase in-app game rewards.
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="../images/spend2save/statistic.png" width="100%"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paratext">
+                According to information on Gaming Monetization on Statista.com, 2020 alone saw a mobile game market worth over 77 billion dollars, a majority of it which can be directly attributed to consumer spending in mobile games. 
+                <br>
+                In the world of freelance work, it is more important than ever to create educational and effective tools to aid consumers in becoming financially secure. Spend2Save aims to direct the impulse to spend money on these in-game rewards towards investing in an emergency fund. 
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <img src="../images/spend2save/statistic2.png" width="100%"/>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Planning and Design</h3>
+            <div class="col-lg-6">
+                <h4>Who are our target users?</h4>
+                <div class="paratext">
+                    <ul>
+                        <li>Primary/Secondary(targeted end users/input and output system):</li>
+                        <ul>
+                            <li>Students and freelancers who use RBC as their main bank.</li>
+                        </ul>
+                        <li>Tertiary(others directly receiving benefits from system success or failure):</li>
+                        <ul>
+                            <li>RBC (it could encourage users of the app to open accounts)</li>
+                        </ul>
+                        <li>Facilitating(design, development, maintenance):</li>
+                        <ul>
+                            <li>RBC(would have to implement the system, the back-end servers and keep it updated)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4>Why is it important to them?</h4>
+                <div class="paratext">
+                    <ul>
+                        <li>
+                            Students and freelancers typically don’t have the same financial security as full time salary based employees. An emergency at the wrong time, during a time of low income, can cause plenty of financial aches especially if they haven’t set up an emergency fund.
+                        </li>
+                        <li>Having savings is important in case of emergency.</li>
+                        <li>People may have other savings goals such as a vacation or new car or even a down payment for a home. This can be another motivation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Modeling Our Application</h4>
+                <div class="paratext">
+                    Society has seen huge trends in virtual avatars such as Sims. These games are widely successful and they attract a demographic that have grown up playing them. We firmly believe that pairing this demographic with the age range that spends the most on in-app purchases creates a unique opportunity for our product to truly incentivize users to invest in an emergency fund through this game.
+                </div>
+                <div class="paratext">
+                    The aim of Spend2Save is to direct the impulse to spend money on in-game rewards towards saving money through virtual avatars. This is accomplished through gamifying the emergency fund saving experience to incentivize users to set aside amounts of money each paycheck to add to their emergency savings accounts. This app creates a visual manifestation for the amount saved for emergency use and allows users to “unlock” certain rewards for their in-game avatars through the transfer of funds to their emergency fund.
+                    <br><br>
+                    The app can be broken down into 3 main components.
+                    <ol>
+                        <li>The creation and customization of a user’s avatar</li>
+                        <li>The transferring of funds into a user’s “spending wallet” to unlock avatar skins, accessories, pets, etc.</li>
+                        <li>
+                            The storefront which allows users to browse through and “pay” for these rewards by transferring money from their “spending wallet” to their total savings fund.
+                        </li>
+                    </ol>
+                </div>
+        </div>
+        <div class="row">
+            <h3>Implementation</h3>
+            <div class="paratext">
+                As learning a new skill was a major part of the hackathon, we used Flutter, a mobile development framework made by Google, to create our Spend2Save prototype. To create a mockup of our future, we used UXPin.
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <img src="https://tech.pelmorex.com/wp-content/uploads/2020/10/flutter.png" width="100%" alt="Flutter Logo"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paratext">
+                Check out the video demo for our project!
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">            
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/u3JBR1CQfqw" title="Spend2Save Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paratext">
+                Want to see the work we did for yourself? Check out our GitHub repo <a href="https://github.com/jj-kanu/UofTHacksVIII-Spend2Save" target="_blank">here</a>!
+            </div>
+        </div>
+        <div class="row">
+            <h3>What I Learned</h3>
+            <div class="paratext">
+                This was my first Hackathon so almost everything I did provided a learning experience. The skills needed to quickly plan and execute a project were put into practice and given opportunities to grow. Ways to improve efficiency and team efficacy can only be learned through experience in a fast-paced environment such as this one. With all of us having no prior mobile app development experience, anything we did was something new.
+            </div>
         </div>
     </div>
+
+    <footer class="page-footer">
+        "Fun Fact: The home screen background is a picture of my place at the time"
+        <br>
+        <span class="authored">© JJ Kanu 2021</span>
+    </footer>
+
  </body>
 
 </html>
