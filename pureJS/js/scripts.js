@@ -25,3 +25,34 @@ function goToByScroll(id){
 }
 
 
+$('#scroll_to_projects').on('click', () => {
+    console.log('clicked')
+    $('#projects')[0].scrollIntoView({behavior: "smooth"})
+});
+
+//Change navbar to fixed when under 768px
+
+//Initial load
+if ($(window).width() < 992) {
+    $('#splashBar').removeClass("sticky-top")
+    $('#splashBar')[0].style.backgroundColor = "transparent"
+    $('#splashBar').addClass("fixed-top")
+    console.log("shrunk")
+}
+
+ function changeNavBarType() {
+    if ($(window).width() < 992) {
+        $('#splashBar').removeClass("sticky-top")
+        $('#splashBar')[0].style.backgroundColor = "transparent"
+        $('#splashBar').addClass("fixed-top")
+        console.log("shrunk")
+     }
+     else {
+        $('#splashBar').removeClass("fixed-top")
+        $('#splashBar')[0].style.backgroundColor = "white"
+        $('#splashBar').addClass("sticky-top")
+        console.log("grew")
+     }
+  }
+  
+  window.onresize = changeNavBarType;

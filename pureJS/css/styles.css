@@ -21,7 +21,7 @@ body#index::-webkit-scrollbar {
 /* SplashBar ================================================================================================== */
 #splashBar {
   /* top: 55vh; */
-  background-color: white;
+  /* background-color: white; */
 }
 #splashBar  .navbar-nav .nav-item .nav-link {
   /* color: white; */
@@ -38,11 +38,11 @@ body#index::-webkit-scrollbar {
   text-decoration: underline;
 }
 #splashBar .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-/* #splashBar .navbar-collapse {
+#splashBar .navbar-collapse {
   background-color: white;
-} */
+}
 #splashBar .navbar .navbar-toggler[aria-expanded="true"] {
   color: lightgray!important;
 }
@@ -52,7 +52,12 @@ body#index::-webkit-scrollbar {
 #splashBar .dropdown .dropdown-menu .dropdown-item:active{
   background-color: lightgray !important;
 }
-
+#splashBar #button_group{
+  background-color: white;
+}
+#splashBar #hamburger {
+  background-color: white;
+}
 
 /* NavBar ========================================================================================================== */
 #navBar {
@@ -122,25 +127,27 @@ body#index::-webkit-scrollbar {
 #splashPicText .greeting {
   font-size: 2.4rem;
   font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 #splashPicText .name {
+  margin-top: 0;
   font-size: 5.4rem;
   font-weight: 600;
 }
-#splashPicText .splash_subtext {
-  line-height: 2;
-  font-size: 25px;
-}
 #splashPicText .nickname {
   font-size: 25px;
+  margin-bottom: 0;
 }
 #splashPicText .subtitle {
+  margin-top: 5px;
   font-size: 23px;
 }
 
 #splashButtons {
   color: #FAF9F6;
   margin-top: 25px;
+  font-size: 17px;
 }
 #splashButtons .splash_button {
   color: #FAF9F6;
@@ -151,6 +158,7 @@ body#index::-webkit-scrollbar {
   font-weight: 500;
 }
 #splashButtons .splash_button:hover{
+  cursor: pointer;
   color: lightgray;
   border-bottom: 1px solid lightgray;
 }
@@ -170,7 +178,14 @@ body#index::-webkit-scrollbar {
 }
 
 #projects {
-  width: 60%;
+  /* width: 100vw;
+  height: 100vh;
+  padding-bottom: 0;
+  margin: 0; */
+  padding-top: 60px;
+}
+#projects > h1 {
+  z-index: 100;
 }
 .projects_row {
   padding-right: 5%;

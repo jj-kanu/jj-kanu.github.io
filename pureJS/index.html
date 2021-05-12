@@ -16,24 +16,24 @@
  <body id="index">
 
      <!-- Top Picture -->
-     <!-- Main text will appear on page load, "I also go by JJ" will appear along bench top in image. --> 
-    <!-- <section> -->
         <div id="splashPic">
             <div class="container" id="splashPicText">
-                    <span class="greeting">Hi, I'm </span><br>
-                    <span class="name">James F. Kanu.</span><br><br>
-                    <span class="nickname">I also go by JJ. I like to code.</span><br>
-                    <span class="subtitle">This is my portfolio.</span><br>
+                    <p class="greeting">Hi, I'm </p>
+                    <p class="name">James F. Kanu.</p>
+                    <p class="nickname">I also go by JJ. I like to code.</p>
+                    <p class="subtitle">This is my portfolio.</p>
             </div>
             <div class="container d-none d-md-block" id="splashButtons">
-                <a href="#projects" class="splash_button">Some Projects</a>
+                <a id="scroll_to_projects" class="splash_button">Some Projects</a>
                 <a href="about.html" class="splash_button">A Little About Me</a>
                 <a href="James F. Kanu.pdf" target="_blank" class="splash_button">My Resume</a>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="splashBar">
             <div class="container">
+                <a class="navbar-brand js-scroll-trigger"></a>
                 <button 
+                    id="hamburger"
                     class="navbar-toggler" 
                     type="button" 
                     data-bs-toggle="collapse" 
@@ -44,7 +44,7 @@
                         <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                    <ul class="navbar-nav ms-auto text-center">
+                    <ul class="navbar-nav ms-auto text-end" id="button_group">
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="about.html">About Me</a>
                         </li>
@@ -61,13 +61,11 @@
                 </div>
             </div>
         </nav>
-    <!-- </section> -->
-
-    <!-- <section> -->
+        
         <div class="container" id="projects">
-            <h1>Some Stuff I've Done</h1>
-            <div class="row projects_row">
-                <div class="col-lg-6">
+            <!-- <h1>Some Stuff I've Done</h1> -->
+            <div class="row projects_row gy-3 justify-content-center">
+                <div class="col-xl-5">
                     <div class="project_card">
                         <a href="project_pages/multicard.html">
                             <img src="./images/multicard/multicard_thumb.PNG" class="project_card_img" alt="palyglot_card">
@@ -79,7 +77,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-5">
                     <div class="project_card">
                         <a href="project_pages/palyglot.html">
                             <img src="./images/palyglot/palyglot_thumb.PNG" class="project_card_img" alt="palyglot_card">
@@ -92,8 +90,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row projects_row">
-                <div class="col-lg-6">
+            <div class="row projects_row gy-3 justify-content-center">
+                <div class="col-xl-5">
                     <div class="project_card">
                         <a href="project_pages/clubcus.html">
                             <img src="./images/clubcus/clubcus_thumb.PNG" class="project_card_img" alt="palyglot_card">
@@ -105,7 +103,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-5">
                     <div class="project_card">
                         <a href="project_pages/spend2save.html">
                             <img src="./images/spend2save/spend2save_thumb.PNG" class="project_card_img" alt="palyglot_card">
@@ -125,7 +123,6 @@
             <br>
             <span class="authored">© JJ Kanu 2021</span>
         </footer>
-    </section>
 
  </body>
 
