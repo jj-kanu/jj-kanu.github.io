@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>JJ Kanu | Clubcus</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="icon" href="../images/index_about/AfroIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../js/scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+ </head>
+ <body class="project_page_body" data-bs-spy="scroll" data-bs-target="#table_of_contents" data-bs-offset="42">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">JJ Kanu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="multicard.html">MultiCard.js</a></li>
+                            <li><a class="dropdown-item" href="palyglot.html">palyglot</a></li>
+                            <li><a class="dropdown-item" href="clubcus.html">Clubcus</a></li>
+                            <li><a class="dropdown-item" href="spend2save.html">Spend2Save</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../James F. Kanu.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i
+                                id="linkedin_logo" class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo"
+                                class="bi bi-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="table_of_contents" class="navbar navbar-light flex-column align-items-stretch p-3 fixed-top">
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#overview">Overview</a>
+            <a class="nav-link" href="#role">My Role</a>
+            <a class="nav-link" href="#why">Why Clubcus?</a>
+            <a class="nav-link" href="#planning">Planning & Design</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#users">User Data</a>
+                <a class="nav-link ms-3 my-1" href="#mockup">Mockup</a>
+            </nav>
+            <a class="nav-link" href="#imp">Implementation</a>
+            <a class="nav-link" href="#dep">Deployment</a>
+            <a class="nav-link" href="#takeaway">What I Learned</a>
+        </nav>
+    </nav>
+
+    <div class="container project_page">
+        <!-- About Me -->
+        <h1>Clubcus</h1>
+        <div class="header">
+            For UofT Students, by Uoft Students.
+        </div>
+        <a href="http://aqueous-tor-27793.herokuapp.com/" target="_blank">
+            <div class="row banner_row">
+                <img class="page_banner" src="../images/clubcus/clubcus_page_pic.PNG"/>
+            </div>
+        </a>
+        <div class="row project_details">
+            <div class="col-md-3 text-center">
+                <strong>Timeline:</strong><br> 
+                February 2021 - April 2021
+            </div>
+            <div class="col-md-5 text-center">
+                <strong>Team:</strong><br> 
+                Bianca Pokhrel, JJ Kanu (Me!), Nicolas Ruiz, Suguru Seo
+            </div>
+            <div class="col-md-4 text-center">
+                <strong>Tools:</strong><br> 
+                MongoDB, Express, React, Node.js
+            </div>
+        </div>
+        <div class="row" id="overview">
+            <h3>Overview</h3>
+            <div class="paratext">
+                A <strong>semester-long project</strong> for a Web Development course at University of Toronto, CSC309, Clubcus is a web app made for University of Toronto students that provides a centralized location to <strong>find, join, and manage</strong> recognized and unrecognized <strong>groups at school.</strong>
+            </div>
+        </div>
+        <div class="row" id="role">
+            <h3>My Role</h3>
+            <div class="paratext">
+                I was mainly responsible for the <strong>user side aspect of the web application</strong>. This included the sign-in/log-in pages, the profile page, the navigation bar, and a little bit on the group search pages for the front-end side. On the back-end, creating the routes and schemas to access user information.
+            </div>
+        </div>
+        <div class="row" id="why">
+            <h3>Why Clubcus?</h3>
+            <div class="col-lg-6">
+                <div class="paratext">
+                    At the time of this project’s creation, we were still amidst a province wide lockdown that spanned most of our semester. The difficulties of finding a group or club to join was only exacerbated by the shift to online platforms. 
+                    <br><br>
+                    At the time, UofT has a website that lists all recognized clubs at UofT on Ulife. Ulife presents a list of all recognized groups at UofT, but only displays general group info, often bare with only links to external social media. 
+                    <br><br>
+                    This app intends to allow users to <strong>create groups</strong> for others to join, <strong>make announcements</strong> to members, and <strong>manage member listing</strong>. Official clubs recognized by the University are also able to create their own pages, with added verification to distinguish their registered status. This will provide any university student the ease to find like-minded friends.
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="../images/clubcus/ulife.png" width="100%"/>
+            </div>
+        </div>
+        <div class="row" id="planning">
+            <h3>Planning and Design</h3>
+            <div class="col-lg-6" id="users">
+                <h4>User Profiling</h4>
+                <div class="paratext">
+                    Users will be in three categories: <strong>regular users</strong> that can join groups and comment under announcements, <strong>admins</strong> which can only manage and act as moderator to the groups the account is assigned to, and <strong>superadmins</strong> which serve to only create and delete clubs at will. These profiles don’t overlap (i.e admins can’t join clubs).
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4>Data</h4>
+                    <div class="paratext">
+                        Users will have their list of clubs, ther basic profile information, and pending clubs awaiting acceptance. Admins will not have any information besides the group they’re assigned to. Superadmins likewise only manage the list of clubs and have no special data. The groups themselves will have a category, and information about the group itself. 
+                    </div>
+            </div>
+        </div>
+        <div class="row" id="admins">
+            <h4>Admin Functionality</h4>
+            <div class="paratext">
+                There are two types of admins:
+            </div>
+            <div class="col-lg-6 paratext">
+                <ul>
+                    <li><strong>Super Admin:</strong> Acts as moderator for the whole app; they can verify groups as official clubs and delete any groups.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 paratext">
+                <ul>
+                    <li><strong>Group Admin:</strong> Representatives of group members (or executives of clubs) can post announcements, add, delete group members.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="mockup">
+            <h4>Original Mockup</h4>
+            <div class="col-lg-8">
+                <div id="carouselClubcusTemplate" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../images/clubcus/home_page.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images/clubcus/group_search.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images/clubcus/club_nmem.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images/clubcus/club_rmem.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselClubcusTemplate" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="imp">
+            <h3>Implementation</h3>
+            <div class="col-lg-4">
+                <img id='node' src="https://codingthesmartway.com/wp-content/uploads/2019/01/mern_logo.png" alt="MERN Stack"/>
+            </div>
+            <div class="col-lg-8 d-flex align-items-center">
+                <div class="paratext">
+                    Clucus was built using a <strong>MERN stack</strong>. The front-end was created using React Components while Express and MongoDB was used to run the server and access the database,
+                    <br><br>
+                    Initially we considered using plain JavaScript to make the application, however using React components allowed for reproducibility among multiple pages. The choice to use a MERN stack quickly followed.
+                </div>
+            </div>
+        </div>
+        <div class="row" id="dep">
+            <h3>Deployment</h3>
+            <div class="paratext">
+                By the end of the semester, we were able to complete the project on top of balancing our other academic responsibilities. Although missing some of the initial features we had mapped out we were able to achieve several of our set out key features:
+            </div>
+        </div>
+        <div class="row paratext">
+            <div class="col-lg-6">
+                <ul>
+                    <li><strong>Login and Signup</strong></li>
+                        <ul>
+                            <li>Users can create user accounts to join groups or create an admin account to make a new group</li>
+                        </ul>
+                    <li><strong>Profile Page</strong></li>
+                        <ul>
+                            <li>Users can edit the information displayed to other group members and manage their club memberships</li>
+                        </ul>
+                    <li><strong>Group Search</strong></li>
+                        <ul>
+                            <li>Users can search for other groups and official clubs and apply for membership</li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li><strong>Commenting</strong></li>
+                        <ul>
+                            <li>Users can comment and like group posts</li>
+                        </ul>
+                    <li><strong>Club Management</strong></li>
+                        <ul>
+                            <li>Group admins can create new posts, manage group members, and link external group resources</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paratext">
+                Want to see the site for yourself? <strong>Check out the deployed link <a href="http://aqueous-tor-27793.herokuapp.com/" target="_blank">here</a>!</strong>
+            </div>
+        </div>
+        <div class="row" id="takeaway">
+            <h3>What I Learned</h3>
+            <div class="paratext">
+                Compared to another project using a MERN stack, Palyglot, I was able to work on more of the back-end side in Clubcus. This included working on our server and creating the routes to access the database. Aside from refreshing front-end skills and strengthening back-end technical skills, I was reminded of the <strong>importance of communication</strong> when working on a large web app. 
+                <br><br>
+                With our school semester tighter than usual as a result of the pandemic, the difference in availibilities in our group resulted in some aspects of the project being more complete than others. In hindsight, a better defined sprint cycle may have benefited our final project. <br>
+                As an old videogame I used to play would say, "<strong>Victory lies in preparation</strong>".
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer class="page-footer">
+        "The name makes more sense knowing UofT's portal is called Quercus."
+        <br>
+        <span class="authored">© JJ Kanu 2021</span>
+    </footer>
+    
+
+    <script defer>
+        if ($(window).width() < 1440) {
+            $("#table_of_contents").hide();
+        }
+
+        function hideTOC() {
+            if ($(window).width() < 1440) {
+                $("#table_of_contents").hide();
+            }
+        }
+        window.onresize = hideTOC;
+    </script>
+ </body>
+
+</html>
