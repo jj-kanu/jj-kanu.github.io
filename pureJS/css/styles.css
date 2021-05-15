@@ -6,7 +6,6 @@ html {
 
 body {
   margin: 0%;
-  font-family: "Open Sans", sans-serif;
 }
 body#index{
   -ms-overflow-style: none;  /* IE and Edge */
@@ -16,15 +15,15 @@ body#index{
 body#index::-webkit-scrollbar {
   display: none;
 }
-
+body.project_page_body {
+  position: relative;
+}
 
 /* SplashBar ================================================================================================== */
 #splashBar {
-  /* top: 55vh; */
-  /* background-color: white; */
+  font-size: 18px;
 }
-#splashBar  .navbar-nav .nav-item .nav-link {
-  /* color: white; */
+#splashBar .navbar-nav .nav-item .nav-link {
   margin-left: 20px;
   margin-right: 20px;
   letter-spacing: 0.03rem;
@@ -62,11 +61,20 @@ body#index::-webkit-scrollbar {
 /* NavBar ========================================================================================================== */
 #navBar {
   background-color: white;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+#navBar.navbar-shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 #navBar .navbar-brand {
   color: black;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
+  font-size: 20px;
 }
 #navBar .navbar-nav .nav-item .nav-link {
   color: black;
@@ -101,11 +109,6 @@ body#index::-webkit-scrollbar {
 
 
 /* Index ======================================================================================================== */
-
-/* section {
-  height: 100vh;
-  scroll-snap-align: start;
-} */
 
 #splashPic {
   height: 100vh;
@@ -167,21 +170,26 @@ body#index::-webkit-scrollbar {
 }
 
 .header {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.header.main{
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 
 .paratext {
-  /* font-family: "Open Sans", sans-serif; */
-  /* margin-bottom: 60px; */
   font-size: 18px;
+  color: black;
+}
+.paratext.big {
+  font-size: 20px;
+  color: black;
 }
 
 #projects {
-  /* width: 100vw;
-  height: 100vh;
-  padding-bottom: 0;
-  margin: 0; */
   padding-top: 60px;
 }
 #projects > h1 {
@@ -235,7 +243,7 @@ body#index::-webkit-scrollbar {
 
 /* About ========================================================================================================================= */
 #profileContent {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 60%;
 }
 
@@ -248,11 +256,11 @@ body#index::-webkit-scrollbar {
   border-radius: 5px;
   width: 95%;
 }
-#about-header-text-container {
-  padding-top: 10%;
-}
 #about-header-text {
-  font-size: 22px;
+  font-size: 24px;
+}
+#about-header-text #cur_work {
+  margin-top: 1rem;
 }
 .row.about-section {
   margin-bottom: 2vh;
@@ -268,35 +276,38 @@ body#index::-webkit-scrollbar {
   padding: 5px;
   margin-left: 2px;
   margin-right: 2px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-#skills {
+.row.skills {
   background-color: #FAF9F6;
   border-radius: 5px;
+  margin-top: 2vh;
+  padding-bottom: 0.2rem;
 }
 
 .skills-fe {
-  border: 1px solid rgb(126, 202, 228);
-  color: rgb(126, 202, 228);
+  border: 2px solid rgb(75, 123, 139);
+  color: rgb(75, 123, 139);
 }
 .skills-be {
-  border: 1px solid blue;
-  color: blue;
+  border: 2px solid rgb(80, 80, 255);
+  color: rgb(80, 80, 255);
 }
 .skills-prog {
-  border: 1px solid lightgreen;
+  border: 2px solid lightgreen;
   color: lightgreen;
 }
 .skills-soft {
-  border: 1px solid lightcoral;
+  border: 2px solid lightcoral;
   color: lightcoral;
 }
 
 
 /* Shared Among Project Pages ====================================================================================================== */
 .container.project_page {
-  /* max-width: 1100px; */
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .container.project_page .row {
   margin-bottom: 4vh;
@@ -307,6 +318,9 @@ body#index::-webkit-scrollbar {
 .container.project_page .row.project_details {
   font-size: 20px;
 }
+.container.project_page h4 {
+  color: rgb(104, 104, 104);
+}
 .page_banner {
   border-radius: 1.5%;
 }
@@ -314,6 +328,30 @@ body#index::-webkit-scrollbar {
   width: 80%;
   padding-left: auto;
   padding-right: auto;
+}
+
+/* TOC ============================================================================================================= */
+
+#table_of_contents {
+  display: none;
+  margin-top: 15vh;
+  margin-left: 1vw;
+  width: fit-content;
+}
+
+#table_of_contents nav a{
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 0;
+  color: rgb(99, 99, 99);
+  font-size: 15px;
+}
+#table_of_contents nav a.active{
+  border-left: 3px solid rgb(99, 99, 99);
+  color: black;
+  font-weight: 600;
+  background-color: transparent;
 }
 
 /* Palyglot ======================================================================================================================== */
@@ -335,24 +373,6 @@ body#index::-webkit-scrollbar {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   color: black;
-  /* height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none; */
-}
-
-.carousel-control-next-icon:after
-{
-  /* font-size: 55px; */
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  /* font-size: 55px; */
-  color: red;
 }
 
 /* Footer ========================================================================================================================== */
@@ -360,8 +380,8 @@ body#index::-webkit-scrollbar {
   bottom: 0;
   font-size: 1rem;
   font-style: italic;
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  padding-top: 1.3rem !important;
+  padding-bottom: 1.3rem !important;
   background-color: #FAF9F6;
   text-align: center;
 }

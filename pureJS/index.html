@@ -15,7 +15,6 @@
  </head>
  <body id="index">
 
-     <!-- Top Picture -->
         <div id="splashPic">
             <div class="container" id="splashPicText">
                     <p class="greeting">Hi, I'm </p>
@@ -46,7 +45,7 @@
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
                     <ul class="navbar-nav ms-auto text-end" id="button_group">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="about.html">About Me</a>
+                            <a class="nav-link" href="about.html">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="James F. Kanu.pdf" target="_blank">Resume</a>
@@ -124,6 +123,29 @@
             <span class="authored">© JJ Kanu 2021</span>
         </footer>
 
+        <script>
+            //Change navbar to fixed when under 992px
+            //Initial load
+            if ($(window).width() < 992) {
+                $('#splashBar').removeClass("sticky-top")
+                $('#splashBar')[0].style.backgroundColor = "transparent"
+                $('#splashBar').addClass("fixed-top")
+            }
+
+            function changeNavBarType() {
+                if ($(window).width() < 992) {
+                $("#splashBar").removeClass("sticky-top");
+                $("#splashBar")[0].style.backgroundColor = "transparent";
+                $("#splashBar").addClass("fixed-top");
+                } else {
+                $("#splashBar").removeClass("fixed-top");
+                $("#splashBar")[0].style.backgroundColor = "white";
+                $("#splashBar").addClass("sticky-top");
+                }
+            }
+            
+            window.onresize = changeNavBarType;
+        </script>
  </body>
 
 </html>

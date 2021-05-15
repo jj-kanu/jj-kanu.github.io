@@ -12,25 +12,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
  </head>
- <body>
+ <body class="project_page_body" data-bs-spy="scroll" data-bs-target="#table_of_contents" data-bs-offset="42">
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="../index.html">JJ Kanu</a>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#toggleMobileMenu" 
-                aria-controls="toggleMobileMenu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="../index.html">JJ Kanu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto text-end">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,26 +36,43 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="../about.html">About Me</a>
+                        <a class="nav-link" href="../about.html">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../James F. Kanu.pdf" target="_blank">Resume</a>
                     </li>
                     <li class="nav-item nav_logo">
-                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i
+                                id="linkedin_logo" class="bi bi-linkedin"></i></a>
                     </li>
                     <li class="nav-item nav_logo">
-                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
+                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo"
+                                class="bi bi-github"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <nav id="table_of_contents" class="navbar navbar-light flex-column align-items-stretch p-3 fixed-top">
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#overview">Overview</a>
+            <a class="nav-link" href="#role">My Role</a>
+            <a class="nav-link" href="#why">Why Clubcus?</a>
+            <a class="nav-link" href="#planning">Planning & Design</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#users">Users</a>
+                <a class="nav-link ms-3 my-1" href="#model">Modeling App</a>
+            </nav>
+            <a class="nav-link" href="#imp">Implementation</a>
+            <a class="nav-link" href="#takeaway">What I Learned</a>
+        </nav>
+    </nav>
+
     <div class="container project_page">
         <h1>Spend2Save</h1>
         <div class="header">
-            For UofT Students, by Uoft Students.
+            Saving Money, Gamified!
         </div>
         <a href="https://devpost.com/software/spend-to-save" target="_blank">
             <div class="row banner_row">
@@ -81,24 +93,24 @@
                 Flutter, Andriod SDK, UXPin
             </div>
         </div>
-        <div class="row">
+        <div id="overview" class="row">
             <h3>Overview</h3>
             <div class="paratext">
-                Spend2Save is an interactive prototype of a mobile app that gamifies the money saving experience. It was created as part of UofTHacks VIII, where it won the RBC challenge:  'In the economy of freelance work, what solution can help students strategically save towards an emergency fund without feeling overwhelmed?'
+                Spend2Save is an interactive prototype of a mobile app that gamifies the money saving experience. It was created as part of <strong>UofTHacks VIII</strong>, where it <strong>won the RBC challenge</strong>:  'In the economy of freelance work, what solution can help students strategically save towards an emergency fund without feeling overwhelmed?'
             </div>
         </div>
-        <div class="row">
+        <div id="role" class="row">
             <h3>My Role</h3>
             <div class="paratext">
-                Given that we were all learning a new framework together, I took part in a bit of everything over the course of the project. Specifically, the sign-in/log-in screens and the store pages were the parts of the project I was most responsible for.
+                Given that we were all learning a new framework together, I took part in <strong>a bit of everything</strong> over the course of the project. Specifically, the <strong>sign-in/log-in screens</strong> and the <strong>store pages</strong> were the parts of the project I was most responsible for.
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="why">
             <h3>Why Spend2Save?</h3>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-flex align-items-center">
                 <div class="paratext">
                     At the time of the hackathon, Toronto was once again going into lockdown. When we thought about this as a team, we realized that the feeling of putting a set amount of money away every time income rolls through, may create feelings of dread rather than positivity. <br> <br>
-                    We wanted to create a positive association towards investing in an emergency fund by pairing it with a huge market of users who purchase in-app game rewards.
+                    We wanted to create a <strong>positive association towards investing</strong> in an emergency fund by pairing it with a huge market of users who purchase in-app game rewards.
                 </div>
             </div>
             <div class="col-lg-6">
@@ -107,8 +119,8 @@
         </div>
         <div class="row">
             <div class="paratext">
-                According to information on Gaming Monetization on Statista.com, 2020 alone saw a mobile game market worth over 77 billion dollars, a majority of it which can be directly attributed to consumer spending in mobile games. 
-                <br>
+                According to information on Gaming Monetization on Statista.com, 2020 alone saw a <strong>mobile game market worth over 77 billion dollars</strong>, a majority of it which can be directly attributed to consumer spending in mobile games. 
+                <br><br>
                 In the world of freelance work, it is more important than ever to create educational and effective tools to aid consumers in becoming financially secure. Spend2Save aims to direct the impulse to spend money on these in-game rewards towards investing in an emergency fund. 
             </div>
         </div>
@@ -117,21 +129,21 @@
                 <img src="../images/spend2save/statistic2.png" width="100%"/>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="planning">
             <h3>Planning and Design</h3>
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="users">
                 <h4>Who are our target users?</h4>
                 <div class="paratext">
                     <ul>
-                        <li>Primary/Secondary(targeted end users/input and output system):</li>
+                        <li><strong>Primary/Secondary</strong>(targeted end users/input and output system):</li>
                         <ul>
                             <li>Students and freelancers who use RBC as their main bank.</li>
                         </ul>
-                        <li>Tertiary(others directly receiving benefits from system success or failure):</li>
+                        <li><strong>Tertiary</strong>(others directly receiving benefits from system success or failure):</li>
                         <ul>
                             <li>RBC (it could encourage users of the app to open accounts)</li>
                         </ul>
-                        <li>Facilitating(design, development, maintenance):</li>
+                        <li><strong>Facilitating</strong>(design, development, maintenance):</li>
                         <ul>
                             <li>RBC(would have to implement the system, the back-end servers and keep it updated)</li>
                         </ul>
@@ -143,7 +155,7 @@
                 <div class="paratext">
                     <ul>
                         <li>
-                            Students and freelancers typically don’t have the same financial security as full time salary based employees. An emergency at the wrong time, during a time of low income, can cause plenty of financial aches especially if they haven’t set up an emergency fund.
+                            Students and freelancers typically <strong>don’t have the same financial security</strong> as full time salary based employees. An emergency at the wrong time, during a time of low income, can cause plenty of financial aches especially if they haven’t set up an emergency fund.
                         </li>
                         <li>Having savings is important in case of emergency.</li>
                         <li>People may have other savings goals such as a vacation or new car or even a down payment for a home. This can be another motivation.</li>
@@ -151,28 +163,27 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="model">
             <h4>Modeling Our Application</h4>
                 <div class="paratext">
-                    Society has seen huge trends in virtual avatars such as Sims. These games are widely successful and they attract a demographic that have grown up playing them. We firmly believe that pairing this demographic with the age range that spends the most on in-app purchases creates a unique opportunity for our product to truly incentivize users to invest in an emergency fund through this game.
-                </div>
-                <div class="paratext">
-                    The aim of Spend2Save is to direct the impulse to spend money on in-game rewards towards saving money through virtual avatars. This is accomplished through gamifying the emergency fund saving experience to incentivize users to set aside amounts of money each paycheck to add to their emergency savings accounts. This app creates a visual manifestation for the amount saved for emergency use and allows users to “unlock” certain rewards for their in-game avatars through the transfer of funds to their emergency fund.
+                    Society has seen huge trends in <strong>virtual avatars such as The Sims</strong>. These games are widely successful and they attract a demographic that have grown up playing them. We firmly believe that pairing this demographic with the age range that spends the most on in-app purchases creates a unique opportunity for our product to truly <strong>incentivize users to invest</strong> in an emergency fund through this game.
                     <br><br>
-                    The app can be broken down into 3 main components.
+                    The aim of Spend2Save is to direct the impulse to spend money on in-game rewards towards saving money through virtual avatars. This is accomplished through gamifying the emergency fund saving experience to incentivize users to set aside amounts of money each paycheck to add to their emergency savings accounts. This app creates a <strong>visual manifestation for the amount saved</strong> for emergency use and allows users to “unlock” certain rewards for their in-game avatars through the transfer of funds to their emergency fund.
+                    <br><br>
+                    The app can be broken down into <strong>3 main components.</strong>
                     <ol>
-                        <li>The creation and customization of a user’s avatar</li>
-                        <li>The transferring of funds into a user’s “spending wallet” to unlock avatar skins, accessories, pets, etc.</li>
+                        <li>The <strong>creation and customization</strong> of a user’s avatar</li>
+                        <li>The <strong>transferring of funds</strong> into a user’s “spending wallet” to unlock avatar skins, accessories, pets, etc.</li>
                         <li>
-                            The storefront which allows users to browse through and “pay” for these rewards by transferring money from their “spending wallet” to their total savings fund.
+                            The storefront which allows users to browse through and <strong>“pay” for these rewards by transferring money</strong> from their “spending wallet” to their total savings fund.
                         </li>
                     </ol>
                 </div>
         </div>
-        <div class="row">
+        <div class="row" id="imp">
             <h3>Implementation</h3>
             <div class="paratext">
-                As learning a new skill was a major part of the hackathon, we used Flutter, a mobile development framework made by Google, to create our Spend2Save prototype. To create a mockup of our future, we used UXPin.
+                As learning a new skill was a major part of the hackathon, we used <strong>Flutter</strong>, a mobile development framework made by Google, to create our Spend2Save prototype. To create a mockup of our future, we used <strong>UXPin</strong>.
             </div>
         </div>
         <div class="row justify-content-center">
@@ -182,7 +193,7 @@
         </div>
         <div class="row">
             <div class="paratext">
-                Check out the video demo for our project!
+                Check out the <strong>video demo</strong> for our project!
             </div>
         </div>
         <div class="row justify-content-center">
@@ -194,23 +205,37 @@
         </div>
         <div class="row">
             <div class="paratext">
-                Want to see the work we did for yourself? Check out our GitHub repo <a href="https://github.com/jj-kanu/UofTHacksVIII-Spend2Save" target="_blank">here</a>!
+                Want to see the work we did for yourself? <strong>Check out our GitHub repo <a href="https://github.com/jj-kanu/UofTHacksVIII-Spend2Save" target="_blank">here</a>!</strong>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="takeaway">
             <h3>What I Learned</h3>
             <div class="paratext">
-                This was my first Hackathon so almost everything I did provided a learning experience. The skills needed to quickly plan and execute a project were put into practice and given opportunities to grow. Ways to improve efficiency and team efficacy can only be learned through experience in a fast-paced environment such as this one. With all of us having no prior mobile app development experience, anything we did was something new.
+                This was my <strong>first Hackathon</strong> so almost everything I did provided a learning experience. The skills needed to quickly plan and execute a project were put into practice and given opportunities to grow. Ways to <strong>improve efficiency and team efficacy</strong> can only be learned through experience in a fast-paced environment such as this one. With all of us having no prior mobile app development experience, anything we did was something new.
             </div>
         </div>
     </div>
 
+    <br><br>
+
     <footer class="page-footer">
-        "Fun Fact: The home screen background is a picture of my place at the time"
+        "The app's home screen background was a picture of my place at the time"
         <br>
         <span class="authored">© JJ Kanu 2021</span>
     </footer>
 
+    <script defer>
+        if ($(window).width() < 1440) {
+            $("#table_of_contents").hide();
+        }
+
+        function hideTOC() {
+            if ($(window).width() < 1440) {
+                $("#table_of_contents").hide();
+            }
+        }
+        window.onresize = hideTOC;
+    </script>
  </body>
 
 </html>

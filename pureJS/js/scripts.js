@@ -1,58 +1,50 @@
-$(document).ready(function() {
+!function(e) {
+    "use strict";
 
-    // Splash Picture
-    // const splashPic = $("#splashPic")
-    // splashPic.css("background-image","url(myhero.png)")
-    // splashPic.css("height","900px")
-    // splashPic.css("background-repeat","no-repeat")
-    // splashPic.css("background-size","cover")
-    // splashPic.css("position","relative")
-});
+    // Dropdown Slide Courtesy of Adam Macias at https://codepen.io/adammacias/pen/dozPVQ
+    $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+    });
+    
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+    });
 
+    // Scroll For SplashBar Projects
+    $('#scroll_to_projects').on('click', () => {
+        console.log('clicked')
+        $('#projects')[0].scrollIntoView({behavior: "smooth"})
+    });
 
-// Dropdown Slide Courtesy of Adam Macias at https://codepen.io/adammacias/pen/dozPVQ
-$('.dropdown').on('show.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
-});
-  
-$('.dropdown').on('hide.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
-});
+    // Make Table of Contents Fade
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        var x = $(window).width();
+        if (y > 50 && x > 1440) {
+            $("#table_of_contents").fadeIn();
+        } else {
+            $("#table_of_contents").fadeOut();
+        }
+    });
 
+    // Table of Contents Scroll Height
+    $("#table_of_contents .nav-link").click(function () {
+      let lookup = $(this).attr("href");
+      let element = lookup.slice(1);
+      element = document.getElementById(element);
+      const offset = 40;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
 
-function goToByScroll(id){
-    $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
-}
+      lookup = String(lookup);
+      $("html, body").animate({ scrollTop: offsetPosition }, 200);
+    });
+    
 
+    e(window).scroll(function() {
+        e("#navBar").offset().top > 80 ? e("#navBar").addClass("navbar-shrink") : e("#navBar").removeClass("navbar-shrink")
+    })
 
-$('#scroll_to_projects').on('click', () => {
-    console.log('clicked')
-    $('#projects')[0].scrollIntoView({behavior: "smooth"})
-});
-
-//Change navbar to fixed when under 768px
-
-//Initial load
-if ($(window).width() < 992) {
-    $('#splashBar').removeClass("sticky-top")
-    $('#splashBar')[0].style.backgroundColor = "transparent"
-    $('#splashBar').addClass("fixed-top")
-    console.log("shrunk")
-}
-
- function changeNavBarType() {
-    if ($(window).width() < 992) {
-        $('#splashBar').removeClass("sticky-top")
-        $('#splashBar')[0].style.backgroundColor = "transparent"
-        $('#splashBar').addClass("fixed-top")
-        console.log("shrunk")
-     }
-     else {
-        $('#splashBar').removeClass("fixed-top")
-        $('#splashBar')[0].style.backgroundColor = "white"
-        $('#splashBar').addClass("sticky-top")
-        console.log("grew")
-     }
-  }
-  
-  window.onresize = changeNavBarType;
+}(jQuery);

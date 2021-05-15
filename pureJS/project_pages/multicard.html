@@ -7,56 +7,66 @@
     <title>JJ Kanu | MultiCard</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer type="text/javascript" src='js/MultiCard.js'></script>
     <script defer src="../js/scripts.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
  </head>
- <body>
+ <body class="project_page_body" data-bs-spy="scroll" data-bs-target="#table_of_contents" data-bs-offset="42">
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.html">JJ Kanu</a>
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#toggleMobileMenu" 
-            aria-controls="toggleMobileMenu" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navBar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">JJ Kanu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul class="navbar-nav ms-auto text-end">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="multicard.html">MultiCard.js</a></li>
-                        <li><a class="dropdown-item" href="palyglot.html">palyglot</a></li>
-                        <li><a class="dropdown-item" href="clubcus.html">Clubcus</a></li>
-                        <li><a class="dropdown-item" href="spend2save.html">Spend2Save</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="../about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../James F. Kanu.pdf" target="_blank">Resume</a>
-                </li>
-                <li class="nav-item nav_logo">
-                    <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i id="linkedin_logo" class="bi bi-linkedin"></i></a>
-                </li>
-                <li class="nav-item nav_logo">
-                    <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo" class="bi bi-github"></i></a>
-                </li>
-            </ul>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="multicard.html">MultiCard.js</a></li>
+                            <li><a class="dropdown-item" href="palyglot.html">palyglot</a></li>
+                            <li><a class="dropdown-item" href="clubcus.html">Clubcus</a></li>
+                            <li><a class="dropdown-item" href="spend2save.html">Spend2Save</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../James F. Kanu.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jj-kanu/" target="_blank"><i
+                                id="linkedin_logo" class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item nav_logo">
+                        <a class="nav-link" href="https://github.com/jj-kanu" target="_blank"><i id="github_logo"
+                                class="bi bi-github"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
+    <nav id="table_of_contents" class="navbar navbar-light flex-column align-items-stretch p-3 fixed-top">
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+            <a class="nav-link js-scroll-trigger" href="#why">Why MultiCard?</a>
+            <a class="nav-link js-scroll-trigger" href="#planning">Planning & Design</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1 js-scroll-trigger" href="#usecase">Use Cases</a>
+                <a class="nav-link ms-3 my-1 js-scroll-trigger" href="#mockups">Mockups</a>
+            </nav>
+            <a class="nav-link js-scroll-trigger" href="#imp">Implementation & Deployment</a>
+            <a class="nav-link js-scroll-trigger" href="#takeaway">What I Learned</a>
+        </nav>
+    </nav>
 
     <div class="container project_page">
         <h1>MultiCard</h1>
@@ -78,49 +88,50 @@
                 HTML, CSS, JavaScript
             </div>
         </div>
-        <div class="row">
+    
+        <div class="row" id="overview">
             <h3>Overview</h3>
             <div class="paratext">
-                Regardless of your answer to the question above, you don't have to, I actually did it! MultiCard.js is a front-end JavaScript library where developers can make nested card components with slide transitions in four directions. 
+                Regardless of your answer to the question above, you don't have to, I actually did it! MultiCard.js is a <strong>front-end JavaScript library</strong> where developers can make nested card components with slide transitions in four directions. 
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="why">
             <h3>Why MultiCard?</h3>
             <div class="paratext">
-                The purpose of MultiCard is to allow developers to display clean and minimalist cards, while also giving options to the user to display more information. Developers can simply decide what information they want to be displayed in the main card. This can be a mix of text or even fully minimalistic with just using a picture. 
-                <br>
-                Although JQuery already has a slide effect, it limits a drawer to appear only in the y-direction with the width of the subcard restricted by the parent. MultiCard allows more freedom in this regard with cards being available in both axis and subcards to be larger than their parent.
+                The purpose of MultiCard is to <strong>allow developers to display clean and minimalist cards</strong>, while also giving options to the user to display more information. Developers can simply decide what information they want to be displayed in the main card. This can be a mix of text or even fully minimalistic with just using a picture. 
+                <br><br>
+                Although JQuery already has a slide effect, it limits a drawer to appear only in the y-direction with the width of the subcard restricted by the parent. <strong>MultiCard allows more freedom</strong> in this regard with cards being available in both axis and subcards to be larger than their parent.
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="planning">
             <h3>Planning and Design</h3>
-            <h4>What are the use cases?</h4>
+            <h4 id="usecase">What are the use cases?</h4>
             <div class="paratext">
                 Several types of web apps that can easily make use of this library. Some examples include:
                 <ul>
-                    <li>Digital business card or credentials</li>
+                    <li><strong>Digital business card or credentials</strong></li>
                     <ul>
                         <li>A simple card with bare information can be displayed, with clicking text on the card activating an associated sub-card</li>
                         <li><i>(This was actually the inspiration for this project!)</i></li>
                     </ul>
-                    <li>Minimalist store sites can use MultiCards to display items on sale</li>
+                    <li><strong>Minimalist store sites can use MultiCards to display items on sale</strong></li>
                     <ul>
                         <li>The price and name of pieces can pop out of cards upon hover</li>
                     </ul>
-                    <li>Minimalist image galleries</li>
+                    <li><strong>Minimalist image galleries</strong></li>
                     <ul>
                         <li>Information about the art and artist can slide out of the image upon click or hover</li>
                     </ul>
                 </ul>
             </div>
-            <h4>Original Mockups</h4>
+            <h4 id="mockups">Original Mockups</h4>
             <div class="col-lg-5"><img src="../images/multicard/mockup1.png" width="100%"/></div>
             <div class="col-lg-5"><img src="../images/multicard/mockup2.png" width="100%"/></div>
         </div>
-        <div class="row">
+        <div class="row" id="imp">
             <h3>Implementation & Deployment</h3>
             <div class="paratext">
-                MultiCard was made using just plain HTML, CSS, and JavaScript without the use of any external libraries. The library page containing API documentation and examples was deployed using Heroku. The library can also be downloaded from a repo available on my GitHub account.
+                MultiCard was made using just plain <strong>HTML, CSS, and JavaScript</strong> without the use of any external libraries. The library page containing API documentation and examples was deployed using Heroku. The library can also be downloaded from a repo available on my GitHub account.
             </div>
         </div>
         <div class="row justify-content-center">
@@ -128,23 +139,37 @@
         </div>
         <div class="row">
             <div class="paratext">
-                Want to see the library page for yourself? Check out the deployed link <a href="https://guarded-harbor-47184.herokuapp.com/" target="_blank">here</a>!
+                Want to see the library page for yourself? <strong>Check out the deployed link <a href="https://guarded-harbor-47184.herokuapp.com/" target="_blank">here</a>!</strong>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="takeaway">
             <h3>What I Learned</h3>
             <div class="paratext">
-                There are a lot of JavaScript libraries available on the internet so the first challenge I faced was coming up with something original. Card components are present in most web pages so I thought to take a different approach to what I card component can accomplish. <br>
-                In creating MultiCard.js, my main takeaway was the learning and application of DOM manipulation in the browser.
+                There are a lot of JavaScript libraries available on the internet so the first challenge I faced was coming up with something original. Card components are present in most web pages so I thought to take a different approach to what I card component can accomplish. <br><br> 
+                In creating MultiCard.js, my main takeaway was the learning and application of <strong>DOM manipulation in the browser</strong>.
             </div>
         </div>
     </div>
 
+    <br><br>
+
     <footer class="page-footer">
-        "The name makes more sense knowing UofT's portal is called Quercus."
+        "Check out the library page if you haven't yet!"
         <br>
         <span class="authored">© JJ Kanu 2021</span>
     </footer>
+
+    <script defer>
+        if ($(window).width() < 1440) {
+            $("#table_of_contents").hide();
+        }
+        function hideTOC() {
+            if ($(window).width() < 1440) {
+                $("#table_of_contents").hide();
+            }
+        }
+        window.onresize = hideTOC;
+    </script>
  </body>
 
 </html>
