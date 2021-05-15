@@ -113,7 +113,7 @@ body.project_page_body {
 #splashPic {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/index_about/myhero.png);
+    url(../images/index_about/myhero.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
